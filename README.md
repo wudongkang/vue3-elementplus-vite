@@ -1,12 +1,4 @@
-<p align="center">
-  <a href="https://github.com/gmingchen/vue3-element-plus-admin">
-    <img src="http://oss.gumingchen.icu/image/slipper.jpeg" alt="logo" width="120">
-  </a>
-</p>
-<p align="center">
-  <a href="http://admin.gumingchen.icu/doc/">文档</a> |
-  <a href="http://admin.gumingchen.icu">预览</a>
-</p>
+
 <p align="center">
   <a href="https://github.com/vuejs/vue-next">
     <img src="https://img.shields.io/badge/vue-3.x-brightgreen.svg" alt="vue">
@@ -36,7 +28,6 @@
   </a>
 </p>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java + Vue 有很多优秀的后台管理系统，但是为了可以高效的开发后台权限管理系统，作者就自己开发出 vue3-element-plus-admin。<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[vue3-element-plus-admin](https://github.com/gmingchen/vue3-element-plus-admin) 是一个基于 Vue3 + Element-plus + Java 的多企业后台权限管理系统，提供了完善的权限体系，让开发者把注意力集中到具体业务当中，降低开发成本，提高项目效率。
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以用于网站管理后台、SAAS、CMS、CRM、OA、ERP等，企业和个人都可以免费使用。欢迎提交PR（需求），若开发中遇到问题可以上 Github 提 Issues。
 
@@ -82,17 +73,9 @@
 - [X] 主题设置：整体页面主题设置，布局设置，暗黑模式
 
 ## 分支
-- [master](https://github.com/gmingchen/vue3-element-plus-admin/tree/master) 多企业完整功能版本：多企业后台管理，持续维护分支
-- [dev](https://github.com/gmingchen/vue3-element-plus-admin/tree/master) 多企业完整功能开发分支
-- [webpack-vuex](https://github.com/gmingchen/vue3-element-plus-admin/tree/webpack-vuex) 该分支使用的是webpack + vuex 实现的功能，使用的是vue组合式api。
-- [vite-pinia](https://github.com/gmingchen/vue3-element-plus-admin/tree/vite-pinia) 该分支使用的是vite + pinia 实现的功能，使用的是vue组合式api的 setup 标签。
-- [dev](https://github.com/gmingchen/vue3-element-plus-admin/tree/master) 多企业完整功能开发分支
-- [base](https://github.com/gmingchen/vue3-element-plus-admin/tree/base) 多企业基础版本：多企业基于 RBAC 的权限功能-仅包含 `菜单管理`、`企业管理`、`企业角色管理`、`企业管理员管理`、`企业菜单管理`、`角色管理`、`管理员管理`、`操作日志`、`登录日志`
-- [single](https://github.com/1240235512/vue3/tree/single) 单企业完整功能版本：单企业后台管理，已停止维护
-- [single-base](https://github.com/1240235512/vue3/tree/single-base) 单企业基础功能版本：单个企业基于 RBAC 的权限功能-仅包含 `菜单管理`、`角色管理`、`用户管理`，已停止维护
-- [composition-api](https://github.com/1240235512/vue3/tree/composition-api) 内置__`Type Script`__、__`I18n`__，__已停止维护可以参考相关的配置__
-- [class-style](https://github.com/1240235512/vue3/tree/class-style) 使用 class 风格开发，内置__`Type Script`__、__`I18n`__，__已停止维护可以参考相关的配置__
-- __`说明:`__ 其他分支是作者开发时使用的分支, 由于作者不断优化、重构、版本迭代的原因，[composition-api](https://github.com/1240235512/vue3/tree/composition-api) 和 [class-style](https://github.com/1240235512/vue3/tree/class-style) 没有同步迭代更新，所以建议这两个分支作为参考学习。
+
+- [master](https://github.com/gmingchen/vue3-element-plus-admin/tree/vite-pinia) 该分支使用的是vite + pinia 实现的功能，使用的是vue组合式api的 setup 标签。
+
 
 ## 环境需求
 - Node => 12.0.0
@@ -108,7 +91,7 @@ vue3-src
 ├─assets 静态资源模块
 │  ├─font 字体
 │  └─sass 样式
-│ 
+│
 ├─components 通用组件
 │  ├─global 全局组件
 │  │  ├─container 布局组件
@@ -123,16 +106,16 @@ vue3-src
 │  ├─image-upload-single 单图片上传组件
 │  ├─region 区域级联选择组件
 │  └─view router-view 视图组件
-│ 
+│
 ├─directive 全局自定义指令
-│ 
+│
 ├─mixins 代码复用 （vue2混入）
 │  ├─dictionary 字典
 │  ├─model 双向绑定
 │  └─page 分页
-│ 
+│
 ├─router 动态路由
-│ 
+│
 ├─store vuex
 │  ├─modules
 │  │  ├─administrator 管理员登录信息模块
@@ -144,7 +127,7 @@ vue3-src
 │  │  ├─theme 主题模块
 │  │  └─websocket 消息推送模块
 │  └─index 动态加载模块
-│ 
+│
 ├─utils 工具模块
 │  ├─constant 常量
 │  ├─dictionary 字典
@@ -197,103 +180,3 @@ npm run build:dev   # 开发环境
 npm run build:prod  # 正式环境
 npm run build:test  # 测试环境
 ```
-
-## 在线预览
-<a href="http://admin.gumingchen.icu">
-  <img src="https://img.shields.io/badge/点这里-brightgreen.svg" />
-</a>
-```
-总后台帐号：demo1，demo2，demo3
-企业超管帐号：admin1，admin2，admin3
-所有帐号的密码统一为：superadmin
-```
-> 防止体验用户添加脏数据，部分操作权限未开通给演示帐号
-
-## 演示图片
-<table>
-  <tr>
-    <td><img src="http://oss.gumingchen.icu/frame/personal.jpg" title="演示图片" alt="演示图片" /></td>
-    <td><img src="http://oss.gumingchen.icu/frame/home.jpg" title="演示图片" alt="演示图片" /></td>
-  </tr>
-  <tr>
-    <td><img src="http://oss.gumingchen.icu/frame/menu.jpg" title="演示图片"  alt="演示图片" /></td>
-    <td><img src="http://oss.gumingchen.icu/frame/file.jpg" title="演示图片"  alt="演示图片" /></td>
-  </tr>
-  <tr>
-    <td><img src="http://oss.gumingchen.icu/frame/operation-log.jpg" title="演示图片"  alt="演示图片" /></td>
-    <td><img src="http://oss.gumingchen.icu/frame/error-log.jpg" title="演示图片"  alt="演示图片" /></td>
-  </tr>
-  <tr>
-    <td><img src="http://oss.gumingchen.icu/frame/enterprise.jpg" title="演示图片"  alt="演示图片" /></td>
-    <td><img src="http://oss.gumingchen.icu/frame/enterprise-menu.jpg" title="演示图片" alt="演示图片" /></td>
-  </tr>
-  <tr>
-    <td><img src="http://oss.gumingchen.icu/frame/enterprise-role.jpg" title="演示图片" alt="演示图片" /></td>
-    <td><img src="http://oss.gumingchen.icu/frame/enterprise-administrator.jpg" title="演示图片"  alt="演示图片" /></td>
-  </tr>
-  <tr>
-    <td><img src="http://oss.gumingchen.icu/frame/online.jpg" title="演示图片" alt="演示图片" /></td>
-    <td><img src="http://oss.gumingchen.icu/frame/dictionary.jpg" title="演示图片" alt="演示图片" /></td>
-  </tr>
-  <tr>
-    <td><img src="http://oss.gumingchen.icu/frame/api.jpg" title="演示图片" alt="演示图片" /></td>
-    <td><img src="http://oss.gumingchen.icu/frame/region.jpg" title="演示图片" alt="演示图片" /></td>
-  </tr>
-  <tr>
-    <td><img src="http://oss.gumingchen.icu/frame/login.jpg" title="演示图片"  alt="演示图片" /></td>
-    <td><img src="http://oss.gumingchen.icu/frame/websocket.jpg" title="演示图片"  alt="演示图片" /></td>
-  </tr>
-  <tr>
-    <td><img src="http://oss.gumingchen.icu/frame/login-log.jpg" title="演示图片" alt="演示图片" /></td>
-    <td><img src="http://oss.gumingchen.icu/frame/configuration.jpg" title="演示图片"  alt="演示图片" /></td>
-  </tr>
-  <tr>
-    <td><img src="http://oss.gumingchen.icu/frame/timed-task.jpg" title="演示图片" alt="演示图片" /></td>
-    <td><img src="http://oss.gumingchen.icu/frame/mail-template.jpg" title="演示图片" alt="演示图片" /></td>
-  </tr>
-</table>
-
-## 联系方式
-<table>
-  <tr align="center">
-    <td>公众号</td>
-    <td>QQ交流群</td>
-    <td>微信交流群</td>
-    <td>微信</td>
-    <td>QQ</td>
-  </tr>
-  <tr>
-    <td>
-      <img src="http://oss.gumingchen.icu/image/official-account-qr-code.jpg" width="200px" title="公众号" alt="公众号:loafer-man" />
-    </td>
-    <td>
-      <img src="http://oss.gumingchen.icu/image/qq-group-qr-code.jpg" width="200px" title="QQ交流群" alt="QQ交流群:124371554" />
-    </td>
-    <td>
-      <img src="http://oss.gumingchen.icu/image/wechat-group-qr-code.jpg?time=1" width="200px" title="微信交流群" alt="微信交流群:124371554" />
-    </td>
-    <td>
-      <img src="http://oss.gumingchen.icu/image/wechat-qr-code-1.jpg" width="200px" title="微信" alt="微信:Gy1240235512" />
-    </td>
-    <td>
-      <img src="http://oss.gumingchen.icu/image/qq-qr-code.jpg" width="200px" title="QQ" alt="QQ:1240235512" />
-    </td>
-  </tr>
-</table>
-
-### 其它开源项目
-
-[java-spring-boot-admin](https://github.com/gmingchen/java-spring-boot-admin/tree/base)
-
-是多企业管理后台基础功能 [base](https://github.com/gmingchen/vue3-element-plus-admin/tree/base) 分支的后端代码，基于 __`java`__ 的 __`springboot`__
-
-[vue3-element-plus-im](https://github.com/gmingchen/vue3-element-plus-im)
-
-是一个即时聊天系统，基于 [vue3](https://github.com/vuejs/vue-next) 、 [element-plus](https://github.com/element-plus/element-plus) 实现。内置了好友私聊功能。
-
-[java-spring-boot-im](https://github.com/gmingchen/java-spring-boot-im)
-
-是[vue3-element-plus-im](https://github.com/gmingchen/vue3-element-plus-im)即时聊天系统的 __`java`__ 后端代码，__`springboot`__ 基于 [netty](https://github.com/netty/netty) 、 [shiro](https://github.com/apache/shiro) 实现。
-
-[node-server](https://github.com/gmingchen/node-server)
-是一个基于 node 开发的后端服务框架，只要你会 SQL 就也可以写接口了，再也不用看后端的脸色了。
